@@ -1,4 +1,4 @@
-# A responsive, fullscreen & fully accessible hero section
+# A responsive, fullscreen & fully accessible hero section 
 
 A responsive, fullscreen, fully accessible hero section with thumbnails and modal popup for extra info built with HTML5, CSS3 & Greensock.
 
