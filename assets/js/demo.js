@@ -1,3 +1,18 @@
+/**
+ * demo.js
+ * https://www.instagram.com/croco.code/
+ * https://www.tiktok.com/@croco.code 
+ * https://github.com/crococode-io 
+ *
+ * Licensed under the MIT license.
+ * http://www.opensource.org/licenses/mit-license.php
+ * 
+ * Copyright 2022, CROCO.CODE
+ * https://www.instagram.com/croco.code/
+ * https://www.tiktok.com/@croco.code 
+ * https://github.com/crococode-io 
+ */
+
 let slider = document.querySelector('.slider');
 let sliderBackground = slider.querySelector('.slider-background-holder');
 let sliderModal = document.querySelector('.slider-modal');
