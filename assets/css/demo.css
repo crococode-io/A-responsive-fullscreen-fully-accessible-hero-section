@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Average|Fjalla+One');
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+body #croco {
+  font-family: 'Average', serif;
+  background-color: #000000;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+/* croco: LOGO + NAVIGATION */
+
+body #croco .logo-navigation {
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+
+body #croco .logo-navigation .logo {
+  position: relative;
+  display: block;
+  width: 100%;
+  max-width: 280px;
+  height: auto;
+  min-height: 98px;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../img/logo-background.png);
+  background-repeat: no-repeat;
+  background-position: top 16px center;
+  background-size: 140px;
+}
+
+body #croco .logo-navigation .logo a {
+  font-family: 'Fjalla One', sans-serif;
+  color: #F4F4F4;
+  font-size: 64px;
+  line-height: 64px;
+  text-transform: uppercase;
+  text-decoration: none;
+  outline: 0px none;
+  outline: 0px;
+}
+
+body #croco .logo-navigation .navigation {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+body #croco .logo-navigation .navigation ul {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 0;
+  margin: 18px 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+body #croco .logo-navigation .navigation ul li {
+  position: relative;
+  display: inline-block;
+  margin: 0 8px;
+}
+
+body #croco .logo-navigation .navigation ul li a {
+  font-family: 'Fjalla One', sans-serif;
+  color: #F4F4F4;
+  position: relative;
+  display: block;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+  outline: 0px none;
+  outline: 0px;
+}
+
+/* croco: SLIDER */
+
+body #croco .slider {
+  background-color: #000000; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover, rgba(8, 15, 15, 1) 0%, rgba(0,0,0,1) 100%); /* FF3.6-15 */
+  background: -webkit-radial-gradient(center, ellipse cover, rgba(8, 15, 15, 1) 0%,rgba(0,0,0,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: radial-gradient(ellipse at center, rgba(8, 15, 15, 1) 0%,rgba(0,0,0,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#080F0F', endColorstr='#000000',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  position: absolute;
+  display: block;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  top: 0; right: 0; bottom: 0; left: 0;
+  overflow: hidden;
+}
+
+body #croco .slider .slider-background-holder {
+  position: absolute;
+  display: block;
+  width: 100%;
+  width: 100vw;
+  height: 100%;
+  height: 100vh;
+  top: 0; right: 0; bottom: 0; left: 0;
+  overflow: hidden;
+  z-index: 1;
+  opacity: 0;
+  -webkit-background-size: cover !important;
+  -moz-background-size: cover !important;
+  -o-background-size: cover !important;
+  background-size: cover !important;
+}
+
+body #croco .slider .slider-items {
+  position: absolute;
+  display: block;
+  width: 100%;
+  width: 100vw;
+  height: 120px;
+  bottom: 0; left: 0; right: 0;
+  z-index: 2;
+}
+
+body #croco .slider .slider-items .slider-item {
+  position: relative;
+  display: block;
+  width: 31.3333%;
+  width: 31.3333vw;
+  height: auto;
+  margin: 0 2%;
+  margin: 0 1vw;
+  border-radius: 6px;
+  overflow: hidden;
+  float: left;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  cursor: pointer;
+  outline: 0px none;
+  outline: 0px;
+  transition: margin-top .35s ease-in-out;
+}
+
+body #croco .slider .slider-items .slider-item:hover {
+  margin-top: -32px;
+}
+
+body #croco .slider .slider-items .slider-item img {
+  position: relative;
+  display: block;
+  width: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+/* croco: MODAL */
+
+body #croco .slider-modal {
+  background-color: #FAFAFA;
+  position: absolute;
+  display: block;
+  width: 31.3333%;
+  width: 31.3333vw;
+  height: 300px;
+  bottom: -380px; left: 50%; 
+  margin-left: -15.66665%; 
+  margin-left: -15.66665vw;
+  z-index: 10;
+  border-radius: 6px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  text-align: center;
+}
+
+body #croco .slider-modal h2 {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 32px;
+  line-height: 145%;
+  text-transform: uppercase;
+}
+
+body #croco .slider-modal .excerpt {
+  position: relative;
+  display: block;
+  padding: 0 0 15px;
+  margin-bottom: 15px;
+}
+
+body #croco .slider-modal .permalink {
+  font-family: 'Fjalla One', sans-serif;
+  background-color: #080F0F;
+  position: relative;
+  display: inline;
+  padding: 10px 16px 8px;
+  border-radius: 6px;
+  border: 1px solid #080F0F;
+  color: #F4F4F4;
+  text-decoration: none;
+  outline: 0px none;
+  outline: 0px;
+  transition: all .45s ease-in-out;
+}
+
+body #croco .slider-modal .permalink:hover {
+  background-color: rgba(8, 15, 15, 0.025);
+  color: #080F0F;
+}
+
+
+body #croco .slider-modal .slider-modal-inner {
+  position: relative;
+  display: block;
+  width: 96%;
+  width: calc( 100% - 64px );
+  height: auto;
+  padding: 32px;
+  overflow: visible;
+}
+
+body #croco .slider-modal .slider-modal-inner .modal-close {
+  background-color: #A52422;
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  border-radius: 16px;
+  top: -16px;
+  right: -16px;
+  cursor: pointer;
+  transform: scale(0);
+}
+
+
+@media screen and (max-width: 992px) {
+
+  body #croco .slider-modal {
+    width: 100%;
+    width: calc( 100% - 32px );
+    margin-left: -50%; 
+    margin-left: calc( -50% + 16px );
+  }
+
+}
